@@ -29,7 +29,7 @@ Controller, Service, and Repository patterns.
 ---
 
 ## Project Structure
-
+```yaml
 Account
 │── pom.xml
 │── mvnw
@@ -66,7 +66,7 @@ Account
 └── java
 └── com.example.Account
 └── AccountApplicationTests.java
-
+```
 
 ---
 
@@ -84,56 +84,37 @@ Account
 ```bash
 git clone https://github.com/your-username/account-management-system.git
 cd account-management-system
+```
 
-Run the application
+### Run the application
 
 Windows
-
+```bash
 mvnw.cmd spring-boot:run
-
+```
 
 Linux / macOS
-
+```bash
 ./mvnw spring-boot:run
 ```
-## Project Details (YAML)
 
-```yaml
-run_application:
-  windows:
-    command: "mvnw.cmd spring-boot:run"
-  linux_mac:
-    command: "./mvnw spring-boot:run"
-
-api_endpoints:
-  - method: POST
-    endpoint: /accounts
-    description: Create a new account
-
-  - method: GET
-    endpoint: /accounts/{id}
-    description: Get account details
-
-  - method: POST
-    endpoint: /transactions
-    description: Perform a transaction
-
-  - method: GET
-    endpoint: /accounts/{id}/statements
-    description: Get account statements
-
-testing:
-  command: "mvnw test"
-
-best_practices:
-  - Clean and modular code structure
-  - Separation of concerns
-  - REST API standards
-  - GitHub friendly project setup
-
-author:
-  name: Vraj Anghan
-  role: Java Backend Developer
+Running Tests
+```bash
+mvnw test
 ```
 
+### Sample API Endpoints
+
+| Method | Endpoint                  | Description            |
+| ------ | ------------------------- | ---------------------- |
+| POST   | /accounts                 | Create a new account   |
+| GET    | /accounts/{id}            | Get account details    |
+| POST   | /transactions             | Perform a transaction  |
+| GET    | /accounts/{id}/statements | Get account statements |
+
+
+##Author
+
+Vraj Anghan
+Java Backend Developer
 
