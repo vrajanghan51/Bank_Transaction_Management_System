@@ -28,44 +28,52 @@ Controller, Service, and Repository patterns.
 
 ---
 
-## Project Structure
-```yaml
+## 📂 Project Structure
+
+```text
 Account
 │── pom.xml
 │── mvnw
 │── mvnw.cmd
 │── .gitignore
+│── .gitattributes
 │── HELP.md
 │
-├── .mvn/wrapper
-│ └── maven-wrapper.properties
+├── .mvn
+│   └── wrapper
+│       └── maven-wrapper.properties
 │
 └── src
-├── main
-│ ├── java
-│ │ └── com.example.Account
-│ │ ├── AccountApplication.java
-│ │ ├── Controller
-│ │ │ ├── AccountController.java
-│ │ │ └── TransactionController.java
-│ │ ├── Model
-│ │ │ ├── Account.java
-│ │ │ ├── Statement.java
-│ │ │ └── TypeEnum.java
-│ │ ├── Repository
-│ │ │ ├── AccountRepo.java
-│ │ │ └── StatementRepo.java
-│ │ └── services
-│ │ ├── AccountService.java
-│ │ └── TransactionService.java
-│ └── resources
-│ ├── static
-│ └── templates
-│
-└── test
-└── java
-└── com.example.Account
-└── AccountApplicationTests.java
+    ├── main
+    │   ├── java
+    │   │   └── com.example.Account
+    │   │       ├── AccountApplication.java
+    │   │       │
+    │   │       ├── Controller
+    │   │       │   ├── AccountController.java
+    │   │       │   └── TransactionController.java
+    │   │       │
+    │   │       ├── Model
+    │   │       │   ├── Account.java
+    │   │       │   ├── Statement.java
+    │   │       │   └── TypeEnum.java
+    │   │       │
+    │   │       ├── Repository
+    │   │       │   ├── AccountRepo.java
+    │   │       │   └── StatementRepo.java
+    │   │       │
+    │   │       └── services
+    │   │           ├── AccountService.java
+    │   │           └── TransactionService.java
+    │   │
+    │   └── resources
+    │       ├── static
+    │       └── templates
+    │
+    └── test
+        └── java
+            └── com.example.Account
+                └── AccountApplicationTests.java
 ```
 
 ---
@@ -113,7 +121,7 @@ mvnw test
 | GET    | /accounts/{id}/statements | Get account statements |
 
 
-##Author
+## Author
 
 Vraj Anghan
 Java Backend Developer
